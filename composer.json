@@ -22,7 +22,7 @@
     },
     "require": {
         "php": ">= 5.3",
-        "lkoszel/xmlseclibs": "*"
+        "lkoszel/xmlseclibs": "dev-wlogic"
     },
     "repositories": [
       {
