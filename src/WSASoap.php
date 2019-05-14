@@ -1,9 +1,9 @@
 <?php
 
-namespace RobRichards\WsePhp;
+namespace LKoszel\WsePhp;
 
 use DOMXPath;
-use RobRichards\XMLSecLibs\XMLSecurityDSig;
+use LKoszel\XMLSecLibs\XMLSecurityDSig;
 
 /**
  * WSASoap.php.

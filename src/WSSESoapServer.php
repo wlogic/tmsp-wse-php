@@ -1,11 +1,11 @@
 <?php
 
-namespace RobRichards\WsePhp;
+namespace LKoszel\WsePhp;
 
 use DOMXPath;
 use Exception;
-use RobRichards\XMLSecLibs\XMLSecEnc;
-use RobRichards\XMLSecLibs\XMLSecurityDSig;
+use LKoszel\XMLSecLibs\XMLSecEnc;
+use LKoszel\XMLSecLibs\XMLSecurityDSig;
 
 /**
  * WSSESoapServer.php.

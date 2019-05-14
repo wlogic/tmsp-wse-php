@@ -1,9 +1,9 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use RobRichards\WsePhp\WSASoap;
-use RobRichards\WsePhp\WSSESoap;
-use RobRichards\XMLSecLibs\XMLSecurityKey;
+use LKoszel\WsePhp\WSASoap;
+use LKoszel\WsePhp\WSSESoap;
+use LKoszel\XMLSecLibs\XMLSecurityKey;
 
 define('PRIVATE_KEY', 'pk-private_key.pem');
 define('CERT_FILE', 'cert-public_key.pem');

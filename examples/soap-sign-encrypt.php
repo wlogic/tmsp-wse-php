@@ -1,8 +1,8 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use RobRichards\WsePhp\WSSESoap;
-use RobRichards\XMLSecLibs\XMLSecurityKey;
+use LKoszel\WsePhp\WSSESoap;
+use LKoszel\XMLSecLibs\XMLSecurityKey;
 
 define('PRIVATE_KEY', 'priv_key.pem');
 define('CERT_FILE', 'pub_key.pem');

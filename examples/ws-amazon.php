@@ -1,8 +1,8 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use RobRichards\WsePhp\WSSESoap;
-use RobRichards\XMLSecLibs\XMLSecurityKey;
+use LKoszel\WsePhp\WSSESoap;
+use LKoszel\XMLSecLibs\XMLSecurityKey;
 
 define('PRIVATE_KEY', './pk-amazon-private-key.pem');
 define('CERT_FILE', './cert-amazon-cert.pem');
