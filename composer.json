@@ -21,13 +21,6 @@
         }
     },
     "require": {
-        "php": ">= 5.3",
-        "lkoszel/xmlseclibs": "dev-master"
-    },
-    "repositories": [
-      {
-        "type": "vcs",
-        "url": "https://github.com/lkoszel/xmlseclibs"
-      }
-    ]
+        "php": ">= 5.3"
+    }
 }
