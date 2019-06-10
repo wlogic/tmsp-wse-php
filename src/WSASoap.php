@@ -3,7 +3,7 @@
 namespace Wlogic\WsePhp;
 
 use DOMXPath;
-use Wlogic\XMLSecLibs\XMLSecurityDSig;
+use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
 
 /**
  * WSASoap.php.

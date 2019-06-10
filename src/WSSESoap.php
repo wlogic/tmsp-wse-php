@@ -6,9 +6,9 @@ use DOMElement;
 use DOMText;
 use DOMXPath;
 use Exception;
-use Wlogic\XMLSecLibs\XMLSecEnc;
-use Wlogic\XMLSecLibs\XMLSecurityDSig;
-use Wlogic\XMLSecLibs\XMLSecurityKey;
+use Wlogic\TmspXMLSecLibs\XMLSecEnc;
+use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
+use Wlogic\TmspXMLSecLibs\XMLSecurityKey;
 
 /**
  * WSSESoap.php.

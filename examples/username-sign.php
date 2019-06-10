@@ -2,7 +2,7 @@
 require __DIR__ . '/../vendor/autoload.php';
 
 use Wlogic\WsePhp\WSSESoap;
-use Wlogic\XMLSecLibs\XMLSecurityKey;
+use Wlogic\TmspXMLSecLibs\XMLSecurityKey;
 
 define('PRIVATE_KEY', 'pk-private_key.pem');
 define('CERT_FILE', 'cert-public_key.pem');

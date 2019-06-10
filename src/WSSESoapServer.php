@@ -4,8 +4,8 @@ namespace Wlogic\WsePhp;
 
 use DOMXPath;
 use Exception;
-use Wlogic\XMLSecLibs\XMLSecEnc;
-use Wlogic\XMLSecLibs\XMLSecurityDSig;
+use Wlogic\TmspXMLSecLibs\XMLSecEnc;
+use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
 
 /**
  * WSSESoapServer.php.

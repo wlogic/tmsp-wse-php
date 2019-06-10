@@ -17,7 +17,7 @@
     "homepage": "https://github.com/wlogic/tmsp-wse-php",
     "autoload": {
         "psr-4": {
-            "Wlogic\\WsePhp\\": "src"
+            "Wlogic\\TmspWsePhp\\": "src"
         }
     },
     "require": {
