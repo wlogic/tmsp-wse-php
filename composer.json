@@ -1,5 +1,5 @@
 {
-    "name": "lkoszel/wse-php",
+    "name": "wlogic/tmsp-wse-php",
     "description": "Libraries for adding WS-* support to ext/soap in PHP.",
     "authors": [
         {
@@ -14,10 +14,10 @@
         "WS-Addressing",
         "WS-Security"
     ],
-    "homepage": "https://github.com/lkoszel/wse-php",
+    "homepage": "https://github.com/wlogic/tmsp-wse-php",
     "autoload": {
         "psr-4": {
-            "LKoszel\\WsePhp\\": "src"
+            "Wlogic\\WsePhp\\": "src"
         }
     },
     "require": {
