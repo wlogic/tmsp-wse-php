@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/../vendor/autoload.php';
 
-use Wlogic\WsePhp\WSSESoap;
+use Wlogic\TmspWsePhp\WSSESoap;
 use Wlogic\TmspXMLSecLibs\XMLSecurityKey;
 
 define('PRIVATE_KEY', './pk-amazon-private-key.pem');

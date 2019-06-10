@@ -1,6 +1,6 @@
 <?php
 
-namespace Wlogic\WsePhp;
+namespace Wlogic\TmspWsePhp;
 
 use DOMXPath;
 use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
