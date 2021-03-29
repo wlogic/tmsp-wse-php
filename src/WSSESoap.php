@@ -13,7 +13,7 @@ use Wlogic\TmspXMLSecLibs\XMLSecurityKey;
 /**
  * WSSESoap.php.
  *
- * Copyright (c) 2007-2019, Robert Richards <rrichards@ctindustries.net>.
+ * Copyright (c) 2007-2020, Robert Richards <rrichards@ctindustries.net>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -46,10 +46,10 @@ use Wlogic\TmspXMLSecLibs\XMLSecurityKey;
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @author    Robert Richards <rrichards@ctindustries.net>
- * @copyright 2007-2019 Robert Richards <rrichards@ctindustries.net>
+ * @copyright 2007-2020 Robert Richards <rrichards@ctindustries.net>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
  *
- * @version   2.0.4-dev
+ * @version   2.0.4
  */
 class WSSESoap
 {
@@ -168,6 +168,7 @@ class WSSESoap
         }
 
         $nonceNode = $this->soapDoc->createElementNS(self::WSSENS,  self::WSSEPFX.':Nonce', base64_encode($nonce));
+        $nonceNode->setAttribute('EncodingType', "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary");
         $token->appendChild($nonceNode);
 
         $created = $this->soapDoc->createElementNS(self::WSUNS,  self::WSUPFX.':Created', $createdate);
@@ -234,7 +235,7 @@ class WSSESoap
 //                'To' => true
 //            ]
 //        ];
-        $signSpecificHeaders = $options['signSpecificHeaders'];
+        $signSpecificHeaders = (isset($options['signSpecificHeaders']) ? $options['signSpecificHeaders'] : null);
 
         foreach ($this->secNode->childNodes as $node) {
             if ($node->nodeType != XML_ELEMENT_NODE) {

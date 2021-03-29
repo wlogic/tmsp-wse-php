@@ -8,7 +8,7 @@ use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
 /**
  * WSASoap.php.
  *
- * Copyright (c) 2007-2019, Robert Richards <rrichards@ctindustries.net>.
+ * Copyright (c) 2007-2020, Robert Richards <rrichards@ctindustries.net>.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -41,10 +41,10 @@ use Wlogic\TmspXMLSecLibs\XMLSecurityDSig;
  * POSSIBILITY OF SUCH DAMAGE.
  *
  * @author    Robert Richards <rrichards@ctindustries.net>
- * @copyright 2007-2019 Robert Richards <rrichards@ctindustries.net>
+ * @copyright 2007-2020 Robert Richards <rrichards@ctindustries.net>
  * @license   http://www.opensource.org/licenses/bsd-license.php  BSD License
  *
- * @version   2.0.4-dev
+ * @version   2.0.4
  */
 class WSASoap
 {
@@ -165,7 +165,7 @@ class WSASoap
     {
         $header = $this->locateHeader();
 
-        $nodeRelatesTo = $this->soapDoc->createElementNS(self::WSANS, self::WSAPFX . ':RelatesTo', $originalMessageId);
+        $nodeRelatesTo = $this->soapDoc->createElementNS($this->ns, self::WSAPFX . ':RelatesTo', $originalMessageId);
         $header->appendChild($nodeRelatesTo);
     }
 
